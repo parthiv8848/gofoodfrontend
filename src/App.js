@@ -2,10 +2,7 @@ import './App.css';
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'  //npm i bootstrap-dark-5 boostrap
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-import Badge from '@mui/material/Badge'; // If you're using Material-UI v5 (beta)
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import AddIcon from '@mui/icons-material/Add';
+
 
 
 import Home from './screens/Home';
