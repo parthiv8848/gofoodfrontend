@@ -7,7 +7,7 @@ export default function Cart() {
   if (data.length === 0) {
     return (
       <div>
-        <div className='m-5 w-100 text-center fs-3'>The Cart is Empty!</div>
+        <div className='m-5 w-100 text-center fs-3'  style={{ color: 'white' }}>The Cart is Empty!</div>
       </div>
     )
   }
@@ -46,7 +46,7 @@ export default function Cart() {
       <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md' >
         <table className='table table-hover '>
           <thead className=' text-success fs-4'>
-            <tr  style={{ color: 'white' }}>
+            <tr  >
               <th scope='col'  style={{ color: 'white' }} >#</th>
               <th scope='col'  style={{ color: 'white' }}>Name</th>
               <th scope='col' style={{ color: 'white' }} >Quantity</th>
@@ -63,7 +63,7 @@ export default function Cart() {
                 <td style={{ color: 'white' }}>{food.qty}</td>
                 <td style={{ color: 'white' }}>{food.size}</td>
                 <td style={{ color: 'white' }}>{food.price}</td>
-                <td  style={{ color: 'white' }}><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }  style={{ color: 'white' }}} /></button> </td></tr>
+                <td  style={{ color: 'white' }}><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }  } /></button> </td></tr>
             ))}
           </tbody>
         </table>
