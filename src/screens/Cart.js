@@ -57,7 +57,7 @@ export default function Cart() {
           </thead>
           <tbody>
             {data.map((food, index) => (
-              <tr  style={{ color: 'white' }}>
+              <tr  >
                 <th scope='row'  style={{ color: 'white' }}>{index + 1}</th>
                 <td  style={{ color: 'white' }}>{food.name}</td>
                 <td style={{ color: 'white' }}>{food.qty}</td>
