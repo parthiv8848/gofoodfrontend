@@ -47,29 +47,29 @@ export default function Cart() {
         <table className='table table-hover '>
           <thead className=' text-success fs-4'>
             <tr>
-              <th scope='col' >#</th>
-              <th scope='col' >Name</th>
-              <th scope='col' >Quantity</th>
-              <th scope='col' >Option</th>
-              <th scope='col' >Amount</th>
-              <th scope='col' ></th>
+              <th scope='col'  style={{ color: 'white' }} >#</th>
+              <th scope='col'  style={{ color: 'white' }}>Name</th>
+              <th scope='col' style={{ color: 'white' }} >Quantity</th>
+              <th scope='col'  style={{ color: 'white' }}>Option</th>
+              <th scope='col'  style={{ color: 'white' }}>Amount</th>
+              <th scope='col'  style={{ color: 'white' }}></th>
             </tr>
           </thead>
           <tbody>
             {data.map((food, index) => (
               <tr>
-                <th scope='row' >{index + 1}</th>
-                <td >{food.name}</td>
-                <td>{food.qty}</td>
-                <td>{food.size}</td>
-                <td>{food.price}</td>
-                <td ><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td></tr>
+                <th scope='row'  style={{ color: 'white' }}>{index + 1}</th>
+                <td  style={{ color: 'white' }}>{food.name}</td>
+                <td style={{ color: 'white' }}>{food.qty}</td>
+                <td style={{ color: 'white' }}>{food.size}</td>
+                <td style={{ color: 'white' }}>{food.price}</td>
+                <td  style={{ color: 'white' }}><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td></tr>
             ))}
           </tbody>
         </table>
-        <div><h1 className='fs-2'>Total Price: {totalPrice}/-</h1></div>
+        <div><h1 className='fs-2'  style={{ color: 'white' }}>Total Price: {totalPrice}/-</h1></div>
         <div>
-          <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Check Out </button>
+          <button className='btn bg-success mt-5 ' onClick={handleCheckOut}  style={{ color: 'white' }}> Check Out </button>
         </div>
       </div>
 
